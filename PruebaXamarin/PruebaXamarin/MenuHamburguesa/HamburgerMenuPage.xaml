@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PruebaXamarin.HamburgerMenuPage">
+
+    <MasterDetailPage.Master>
+        <ContentPage
+            Title="Mi app"
+            Icon="http://lorempixel.com/50/50/people/1">
+
+            <StackLayout Orientation="Vertical">
+                <ListView x:Name="ListMenu" ItemSelected="ListMenu_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding MenuTitle}" Detail="{Binding MenuDetail}"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            
+        </ContentPage>
+    </MasterDetailPage.Master>
+    
+</MasterDetailPage>

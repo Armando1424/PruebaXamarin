@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PruebaXamarin.PickerElementPage">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0,0,0,0"
+                    Android="0,0,0,0"
+                    WinPhone="12,10,12,10">
+        </OnPlatform>
+    </ContentPage.Padding>
+    
+    <StackLayout>
+        <!--<Label Text="Color Selected" FontSize="Large" />-->
+        <Label Text="Selecciona un color"/>
+        <Picker x:Name="pickerColor" SelectedIndexChanged="pickerColor_SelectedIndexChanged"/>
+        <BoxView x:Name="boxColor" VerticalOptions="CenterAndExpand"/>
+    </StackLayout>
+</ContentPage>

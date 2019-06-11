@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PruebaXamarin.DatePickerElementPage">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0,0,0,0"
+                    Android="0,0,0,0"
+                    WinPhone="12,10,12,10">
+        </OnPlatform>
+    </ContentPage.Padding>
+    
+    <StackLayout>
+        <Label Text="Date Picker Element"/>
+        <!--yyyy-MM-DD-->
+        <DatePicker Date="1997-04-24" MaximumDate="2018-04-27" MinimumDate="1912-12-25" DateSelected="DatePicker_DateSelected"/>
+    </StackLayout>
+</ContentPage>

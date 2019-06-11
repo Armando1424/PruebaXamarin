@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PruebaXamarin.ActivityIndicatorPage">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0,0,0,0"
+                    Android="0,0,0,0"
+                    WinPhone="12,10,12,10">
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <StackLayout>
+        <Label Text="Activity Indicator"/>
+        <ActivityIndicator x:Name="indicator_image" Color="Blue" IsRunning="True"/>
+        <Image Source="http://lorempixel.com/400/400/people/9" x:Name="image_loading"/>
+    </StackLayout>
+</ContentPage>

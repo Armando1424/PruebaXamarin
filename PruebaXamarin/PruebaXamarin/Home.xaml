@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PruebaXamarin.Home">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0,0,0,0"
+                    Android="0,0,0,0"
+                    WinPhone="12,10,12,10">
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="Repos"/>
+        <ListView x:Name="ListElemts">
+            <ListView.ItemTemplate>
+                <DataTemplate >
+                    <TextCell Text="{Binding Nombre}" Detail="{Binding Descripcion}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
